@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[Todo](
+	[Id] [uniqueidentifier] NOT NULL,
+	[Text] [nvarchar](max) NOT NULL,
+	[Done] [date] NULL,
+ CONSTRAINT [PK_Todo] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+INSERT [dbo].[Todo] ([Id], [Text], [Done]) VALUES (N'e1ee0c8a-6608-45fd-9919-e25cac35caab', N'Vaske hus', NULL)
